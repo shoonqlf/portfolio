@@ -266,7 +266,7 @@ export default function Experience() {
       } else if (type === "city") {
         for (let i = 0; i < 5; i++) {
           const h = 2.5 + Math.random() * 5;
-          add(new THREE.Mesh(new THREE.BoxGeometry(1.8, h, 1.8), m), -6 + i * 3, (i % 2 ? 1 : -1) * 2.4).position?.setY?.(h / 2);
+          add(new THREE.Mesh(new THREE.BoxGeometry(1.8, h, 1.8), m), -6 + i * 3, (i % 2 ? 1 : -1) * 2.4);
         }
         g.children.forEach((c) => { c.position.y = c.geometry?.parameters?.height ? c.geometry.parameters.height / 2 : c.position.y; });
       } else if (type === "fiber") {
